@@ -13,15 +13,10 @@
         </li>
         <hr class="sidebar-divider my-0">
         <li class="nav-item active">
-            <a href="#" aria-expanded="false" class="nav-link"><i class="fa fa-home"></i><span class="text">Home</span></a>
-            <ul class="submenu collapse list-unstyled" id="homeSubmenu">
-                <li class="nav-item"><a class="nav-link" href="#">Home 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Home 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Home 3</a></li>
-            </ul>
+            <a href="#" aria-expanded="false" class="nav-link" routerLink="/home" routerLinkActive="active"><i class="fa fa-home"></i><span class="text">Home</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-briefcase"></i><span class="text">About</span></a>
+            <a class="nav-link" href="#" routerLink="/home" routerLinkActive="active"><i class="fa fa-briefcase"></i><span class="text">About</span></a>
         </li>
         <li class="nav-item">
             <a class="nav-link collapsed" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
@@ -29,18 +24,13 @@
                 <i class="fa fa-chevron-right"></i>
             </a>
             <ul class="submenu collapse list-unstyled" id="pageSubmenu">
-                <li class="nav-item"><a class="nav-link" href="#">Home 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Home 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Home 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" routerLink="/home" routerLinkActive="active">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" routerLink="/home" routerLinkActive="active">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" routerLink="/home" routerLinkActive="active">Home 3</a></li>
             </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-image"></i><span class="text">Portfolio</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-paper-plane"></i><span class="text">Contact</span></a></li>
-    </ul>
-
-    <ul class="list-others d-none d-lg-block">
-        <li class="nav-item"><a href="#" class="link download"><i class="fa fa-download"></i> Sample Button</a></li>
-        <li class="nav-item"><a href="#" class="link article">Sample Button</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" routerLink="/home" routerLinkActive="active"><i class="fa fa-image"></i><span class="text">Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" routerLink="/home" routerLinkActive="active"><i class="fa fa-paper-plane"></i><span class="text">Contact</span></a></li>
     </ul>
     <hr class="sidebar-divider my-0">
     <div class="text-center mt-2">

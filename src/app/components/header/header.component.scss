@@ -93,15 +93,16 @@
     .dropdown {
         position: static;
         .dropdown-menu {
-            width: calc(100% - 1.5rem);
-            right: .75rem;
+            width: calc(50% - 1.5rem);
+            right: .75rem !important;
             .dropdown-header,
             .text-uppercase {
                 text-transform: uppercase!important;
             }
             .dropdown-header {
-                font-weight: 800;
+                font-weight: 500 !important;
                 font-size: .65rem;
+                color: $white;
             }
         }
     }

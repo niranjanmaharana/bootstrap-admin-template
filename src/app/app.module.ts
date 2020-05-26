@@ -14,6 +14,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoaderService } from './services/loader.service';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpLoaderComponent } from './components/http-loader/http-loader.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpLoaderComponent } from './components/http-loader/http-loader.compon
     NavigationComponent,
     HomeComponent,
     LoginComponent,
-    HttpLoaderComponent
+    HttpLoaderComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,

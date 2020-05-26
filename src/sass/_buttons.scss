@@ -9,6 +9,8 @@
 
 .input-group>.input-group-append>.btn,
 .btn-search-inline {
+    background-color: $top-drpdwn-hdr-bg;
+    border: 1px solid $top-drpdwn-hdr-bg;
     border-radius: .35rem !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
