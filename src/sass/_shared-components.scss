@@ -1,0 +1,111 @@
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: $p-color;
+}
+
+a,
+a:hover,
+a:focus,
+button:hover,
+button:focus,
+input:hover,
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+a.link {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+a,
+button,
+input {
+    border-radius: 0em;
+}
+
+.small,
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.text-gray-500 {
+    color: $gray-500-color !important;
+}
+
+.text-gray-400 {
+    color: $gray-400-color !important;
+}
+
+.text-gray-800 {
+    color: $gray-800-color !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.h1,
+h1 {
+    font-size: 2.5rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-weight: 400 !important;
+    line-height: 1.2;
+}
+
+.h3,
+h3 {
+    font-size: 1.75rem;
+}

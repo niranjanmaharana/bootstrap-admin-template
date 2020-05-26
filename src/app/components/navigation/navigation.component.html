@@ -1,0 +1,51 @@
+<!-- Sidebar -->
+<nav class="sidebar" [ngClass]="menu.isNavCollapsed ? 'active' : ''">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="short-title rotate-n-15">
+            <img src="../assets/images/favicon.png">
+        </div>
+        <div class="complete-title mx-3">BS Admin</div>
+    </a>
+    <hr class="sidebar-divider my-0">
+    <ul class="list-unstyled components">
+        <li class="nav-item active menu-header">
+            <a class="nav-link" role="button"><i class="fa fa-tachometer"></i><span class="text">Dashboard</span></a>
+        </li>
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item active">
+            <a href="#" aria-expanded="false" class="nav-link"><i class="fa fa-home"></i><span class="text">Home</span></a>
+            <ul class="submenu collapse list-unstyled" id="homeSubmenu">
+                <li class="nav-item"><a class="nav-link" href="#">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home 3</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-briefcase"></i><span class="text">About</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                <i class="fa fa-folder"></i><span class="text">Pages</span>
+                <i class="fa fa-chevron-right"></i>
+            </a>
+            <ul class="submenu collapse list-unstyled" id="pageSubmenu">
+                <li class="nav-item"><a class="nav-link" href="#">Home 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home 3</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-image"></i><span class="text">Portfolio</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-paper-plane"></i><span class="text">Contact</span></a></li>
+    </ul>
+
+    <ul class="list-others d-none d-lg-block">
+        <li class="nav-item"><a href="#" class="link download"><i class="fa fa-download"></i> Sample Button</a></li>
+        <li class="nav-item"><a href="#" class="link article">Sample Button</a></li>
+    </ul>
+    <hr class="sidebar-divider my-0">
+    <div class="text-center mt-2">
+        <button class="sidebar-toggler rounded-circle border-0" (click)="menu.isNavCollapsed = !menu.isNavCollapsed">
+            <i class="fa" [ngClass]="menu.isNavCollapsed ? 'fa-chevron-right' : 'fa-chevron-left'"></i>
+        </button>
+    </div>
+</nav>

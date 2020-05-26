@@ -1,0 +1,195 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+@import '../../../sass/colors';
+@import '../../../sass/shared-components';
+.sidebar {
+    min-width: 10rem;
+    max-width: 10rem;
+    height: 100%;
+    background-color: $sbar-bg;
+    background-image: linear-gradient(180deg, $sbar-strt-bg 10%, $sbar-end-bg 100%);
+    background-size: cover;
+    color: $sbar-color;
+    transition: all 0.3s;
+    .sidebar-brand {
+        color: $sbar-brnd-color;
+        height: 4.375rem;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 800;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        z-index: 1;
+    }
+    hr.sidebar-divider {
+        border-top: 1px solid $sbar-dvdr-brdr-top;
+        margin: 0 1rem 1rem;
+    }
+    .menu-header {
+        cursor: default;
+        pointer-events: none;
+    }
+    .nav-item {
+        .submenu {
+            background-color: $sbar-sbmn-bg;
+            .nav-link {
+                padding: .5rem 1rem;
+            }
+        }
+        .nav-link {
+            padding: 1rem;
+            i.fa-chevron-right {
+                float: right;
+                font-size: 10px;
+                top: 7px;
+                right: 7px;
+                min-width: inherit;
+                line-height: 26px;
+                color: $sbar-chevron-icon;
+            }
+            i {
+                font-size: .85rem;
+                margin-right: .35rem;
+                color: $sbar-nvlnk-icon;
+            }
+            span.text {
+                font-size: .75rem;
+                display: inline;
+            }
+        }
+    }
+    .nav-item.active {
+        .nav-link {
+            color: $sbar-actv-nvlnk !important;
+            font-weight: 500 !important;
+            i {
+                color: $sbar-actv-nvlnk !important;
+            }
+        }
+    }
+    .nav-item:hover {
+        .nav-link {
+            color: $sbar-actv-nvlnk;
+            font-weight: 400;
+            i {
+                color: $sbar-actv-nvlnk !important;
+            }
+        }
+    }
+    .nav-item.active {
+        .submenu {
+            .nav-link {
+                color: inherit !important;
+                font-weight: 400 !important;
+            }
+        }
+    }
+    .sidebar-brand {
+        .short-title {
+            img {
+                width: 20px;
+            }
+        }
+        .complete-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: block;
+        }
+    }
+    .sidebar-toggler {
+        background-color: $sbar-toggler-bg;
+        color: $sbar-toggler-color;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+    .list-others {
+        padding: 20px;
+        list-style: none;
+        a {
+            text-align: center;
+            font-size: 0.9em !important;
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+    a,
+    a:hover,
+    a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    a.download {
+        background: $download-link-bg;
+        color: $download-link-color;
+    }
+    a.article,
+    a.article:hover {
+        background: $article-link-bg !important;
+        color: $article-link-color !important;
+    }
+}
+
+.sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    .list-others {
+        display: none !important;
+    }
+    .sidebar-brand {
+        .short-title {
+            display: block;
+        }
+        .complete-title {
+            display: none;
+        }
+    }
+    ul {
+        .nav-item {
+            .nav-link {
+                padding: 15px 10px;
+                text-align: center;
+                font-size: 0.85em;
+                span.text {
+                    display: none;
+                }
+                i.fa-chevron-right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar.active {
+        margin-left: 0 !important;
+        .sidebar-toggler {
+            display: none;
+        }
+    }
+    .sidebar {
+        min-width: 80px !important;
+        max-width: 80px !important;
+        text-align: center;
+        margin-left: -80px !important;
+        margin-left: 0;
+        .complete-title {
+            display: none !important;
+        }
+        .nav-item {
+            .nav-link {
+                i {
+                    font-size: .85rem;
+                    margin-right: .25rem;
+                }
+            }
+        }
+    }
+}

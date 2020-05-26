@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    src: url(../src/assets/fonts/opensans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Amiko';
+    src: url('./assets/fonts/amiko/Amiko-Bold.woff2') format('woff2'), url('./assets/fonts/amiko/Amiko-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amiko';
+    src: url('./assets/fonts/amiko/Amiko-SemiBold.woff2') format('woff2'), url('./assets/fonts/amiko/Amiko-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amiko';
+    src: url('./assets/fonts/amiko/Amiko-Regular.woff2') format('woff2'), url('./assets/fonts/amiko/Amiko-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

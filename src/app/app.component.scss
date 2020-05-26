@@ -1,1 +1,28 @@
-/**/
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/colors';
+@import '../sass/shared-components';
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+    .content-wrapper {
+        background-color: #f8f9fc;
+        width: 100%;
+        overflow-x: hidden;
+        .content {
+            flex: 1 0 auto;
+        }
+    }
+    .sidebar-toggler-sm {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        .sidebar-toggler-sm {
+            display: block;
+        }
+    }
+}
